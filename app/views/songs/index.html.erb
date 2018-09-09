@@ -1,1 +1,7 @@
 <h1>Songs Library</h1>
+
+<ul>
+  <%= @songs.each do |s| %>
+    <li><%= link_to "#{s.artist} - " %></li>
+  <% end %>
+</ul>
